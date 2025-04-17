@@ -21,27 +21,27 @@
             <h2>Dono/Pessoa</h2>
             <form action="">
                 <label for="nome">Nome:</label> <br>
-                <input type="text" name="nome" id="nomeCliente">
+                <input type="text" name="nome" id="nomeCliente" required>
 
                 <br>
 
                 <label for="cpf">CPF:</label> <br>
-                <input type="text" name="cpf" id="cpfCliente">
+                <input type="text" name="cpf" id="cpfCliente" required>
 
                 <br>
 
                 <label for="idade">Idade:</label> <br>
-                <input type="text" name="idade" id="idadeCliente">
+                <input type="text" name="idade" id="idadeCliente" required>
 
                 <br>
 
                 <label for="dataNascimento">Data de Nascimento:</label> <br>
-                <input type="date" name="dataNascimento" id="dataNascimentoCliente">
+                <input type="date" name="dataNascimento" id="dataNascimentoCliente" required>
 
                 <br>
 
                 <label for="endereco">Endereço:</label> <br>
-                <input type="text" name="endereco" id="enderecoCliente">
+                <input type="text" name="endereco" id="enderecoCliente" required>
 
                 <br>
 
@@ -51,7 +51,7 @@
                 <br>
 
                 <label for="contatoPessoal">Contato Pessoal(e-mail pessoal):</label> <br>
-                <input type="text" name="contatoPessoal" id="contatoPessoalCliente">
+                <input type="text" name="contatoPessoal" id="contatoPessoalCliente" required>
 
                 <br>
 
@@ -85,22 +85,22 @@
 
             <form action="">
                 <label for="tipoAnimal">Tipo do Animal:</label> <br>
-                <input type="text" name="tipoAnimal" id="tipoAnimalCliente">
+                <input type="text" name="tipoAnimal" id="tipoAnimalCliente" required>
 
                 <br>
 
                 <label for="racaAnimal">Raça do Animal:</label> <br>
-                <input type="text" name="racaAnimal" id="racaAnimalCliente">
+                <input type="text" name="racaAnimal" id="racaAnimalCliente" required>
 
                 <br>
 
                 <label for="idadeAnimal">Idade do Animal:</label> <br>
-                <input type="text" name="idadeAnimal" id="idadeAnimalCliente">
+                <input type="text" name="idadeAnimal" id="idadeAnimalCliente" required>
 
                 <br>
 
                 <label for="dataNascimentoAnimal">Data de Nascimento do Animal:</label> <br>
-                <input type="date" name="dataNascimentoAnimal" id="dataNascimentoAnimalCliente">
+                <input type="date" name="dataNascimentoAnimal" id="dataNascimentoAnimalCliente" required>
 
                 <br>
 
@@ -121,12 +121,12 @@
                 <br>
 
                 <label for="pesoAnimal">Peso do Animal:</label> <br>
-                <input type="text" name="pesoAnimal" id="pesoAnimalCliente">
+                <input type="text" name="pesoAnimal" id="pesoAnimalCliente" required>
 
                 <br>
 
                 <label for="alturaAnimal">Altura do Animal:</label> <br>
-                <input type="text" name="alturaAnimal" id="alturaAnimalCliente">
+                <input type="text" name="alturaAnimal" id="alturaAnimalCliente" required>
 
                 <br>
 
@@ -164,7 +164,7 @@
                 <br>
 
                 <label for="racaoAnimal">Qual a Marca de ração do Animal:</label> <br>
-                <input type="text" name="racaoAnimal" id="racaoAnimalCliente">
+                <input type="text" name="racaoAnimal" id="racaoAnimalCliente" required>
 
                 <br>
 
@@ -209,6 +209,11 @@
                 <label for="pagamentoAnimal">Cartão</label>
                 <input type="radio" name="pagamentoAnimal" id="pagamentoAnimalCliente">
                 <label for="pagamentoAnimal">Pix</label>
+
+                <br>
+                <br>
+
+                <button type="button" onclick="validarForm()">Enviar</button>
 
             </form>
         </div>
